@@ -1,0 +1,114 @@
+
+
+button {
+  padding: 20px;
+  border-left-width: 2%;
+  background-color: cornsilk;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 90%;
+  grid-row: 3;
+  border-radius: 10%;
+  border-color: black;
+color: hotpink;
+  transition-duration: 0.4s;
+}
+ 
+
+button:hover {
+  background-color:  salmon;
+  color: black;
+  border-color: purple;
+  border-style:groove;
+  border-width: .8pc;
+  border-radius: 0%;
+}
+
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: pink;
+text-align: center;
+font-size: .8in;
+color: purple;
+
+}
+iframe{
+  border-radius: 10%;
+  border-color: purple;
+  border-width: .45pc;
+ 
+}
+
+
+#scroll-container {
+  -moz-transform: translateX(120%);
+  -webkit-transform: translateX(125%);
+  transform: translateX(-120%);
+  flex-direction: row;
+ 
+
+}
+#scroll-text {
+  -moz-transform: translateX(120%);
+  -webkit-transform: translateX(125%);
+  color: yellow;
+  -moz-animation: my-animation 55s linear infinite;
+  -webkit-animation: my-animation 55s linear infinite;
+  animation: my-animation 20s linear infinite;
+ flex-direction: row;
+ overflow-y: hidden;
+
+  
+}
+#one{
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  color: yellow;
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
+  font-size: 1.2pc;
+ 
+}
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); 
+     }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); 
+    }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    ;
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+   ;
+  }
+}
+
+.link
+{
+  text-decoration: none;
+  color: pink;
+}
+link:hover {
+  color: purple;
+  cursor: pointer;
+}
